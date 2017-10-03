@@ -4,7 +4,7 @@ var ReactDOMServer = require('react-dom/server');
 class Site extends React.Component {
   render() {
     const { manifest, username, dpUrl, userData } = this.props;
-    console.log('userData', userData.DPUrl);
+    // console.log('userData', userData.DPUrl);
     const fcSettings = {
       token: 'db46f4af-1e74-450d-bece-14bfee79b038',
       host: 'https://wchat.freshchat.com',
@@ -57,7 +57,7 @@ class Site extends React.Component {
           </script>
           <script src="https://wchat.freshchat.com/js/widget.js" async />
 
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
           />
@@ -71,7 +71,7 @@ class Site extends React.Component {
 
           gtag('config', 'UA-107210137-1');
           ```}
-          </script>
+          </script> */}
         </body>
       </html>
     );
