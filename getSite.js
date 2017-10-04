@@ -58,8 +58,11 @@ class Site extends React.Component {
         </head>
         <body>
           <div id="root" />
-          <link rel="stylesheet" href={`/${manifest['main.css']}`} />
-          <script src={`/${manifest['main.js']}`} />
+          <link
+            rel="stylesheet"
+            href={`https://cdn.itsmybio.me/${manifest['main.css']}`}
+          />
+          <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
           <script>
             window.fcSettings = {JSON.stringify(fcSettings)}
