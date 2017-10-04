@@ -81,18 +81,6 @@ class Site extends React.Component {
   render() {
     const { manifest, username, dpUrl, userData } = this.props;
 
-    const fcSettingsString = `
-      const fcSettings = {
-            token: 'db46f4af-1e74-450d-bece-14bfee79b038',
-            host: 'https://wchat.freshchat.com',
-            siteId: username,
-            externalId: username, // user's id unique to your system
-            firstName: userData.name, // user's first name
-            email: userData.contact.email, // user's email address
-            phone: userData.contact.phone, // phone number without country code
-          };
-      `;
-
     const gaString = `
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -142,8 +130,6 @@ class Site extends React.Component {
           />
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
-          <script dangerouslySetInnerHTML={{ __html: fcSettingsString }} />
-          <script src="https://wchat.freshchat.com/js/widget.js" async />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
