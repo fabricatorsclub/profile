@@ -60,7 +60,8 @@ const getProfileData = username => {
 //   });
 
 app.get('/', function(req, res) {
-  res.send('Hello World! gopi');
+  const val = getSite({ page: 'home_page' });
+  res.send(val);
 });
 
 app.get('/admin', function(req, res) {
