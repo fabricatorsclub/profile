@@ -60,7 +60,7 @@ const getProfileData = username => {
 //   });
 
 app.get('/', function(req, res) {
-  const val = getSite({ page: 'home_page' });
+  const val = getSite({ page: 'home_page', manifest });
   res.send(val);
 });
 
