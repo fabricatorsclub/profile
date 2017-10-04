@@ -222,6 +222,7 @@
 
     & > div {
       align-items: center;
+      display: inline-block !important;
 
       &:first-child {
         margin-bottom: -40px;

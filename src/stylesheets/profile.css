@@ -833,18 +833,19 @@ h1 {
   #landingPage .pageWrapper .homeContWrapper .secRow > div,
   #landingPage .pageWrapper .homeContWrapper .secRow.imgRight > div {
     align-items: center;
+    display: inline-block !important;
   }
-  /* line 226, ../../sass/partials/_landingPage.scss */
+  /* line 227, ../../sass/partials/_landingPage.scss */
   #landingPage .pageWrapper .homeContWrapper .secRow > div:first-child,
   #landingPage .pageWrapper .homeContWrapper .secRow.imgRight > div:first-child {
     margin-bottom: -40px;
   }
-  /* line 229, ../../sass/partials/_landingPage.scss */
+  /* line 230, ../../sass/partials/_landingPage.scss */
   #landingPage .pageWrapper .homeContWrapper .secRow > div:last-child,
   #landingPage .pageWrapper .homeContWrapper .secRow.imgRight > div:last-child {
     margin-bottom: 40px;
   }
-  /* line 233, ../../sass/partials/_landingPage.scss */
+  /* line 234, ../../sass/partials/_landingPage.scss */
   #landingPage .pageWrapper .homeContWrapper .secRow > div p,
   #landingPage .pageWrapper .homeContWrapper .secRow.imgRight > div p {
     text-align: center;
