@@ -15,6 +15,15 @@ class Site extends React.Component {
       phone: userData.contact.phone, // phone number without country code
       phoneCountryCode: '+1', // phone’s country code
     };
+    const gaString = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107210137-1');
+    `;
     return (
       <html lang="en">
         <head>
@@ -57,21 +66,13 @@ class Site extends React.Component {
           </script>
           <script src="https://wchat.freshchat.com/js/widget.js" async />
 
-          {/* <script
+          <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
           />
           <script>
-            {```
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag('js', new Date());
-
-          gtag('config', 'UA-107210137-1');
-          ```}
-          </script> */}
+            {gaString}
+          </script>
         </body>
       </html>
     );
