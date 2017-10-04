@@ -3,6 +3,7 @@ var ReactDOMServer = require('react-dom/server');
 
 class HomePage extends React.Component {
   render() {
+    const { manifest } = this.props;
     // console.log('userData', userData.DPUrl);
     const fcSettings = {
       token: 'db46f4af-1e74-450d-bece-14bfee79b038',
