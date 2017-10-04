@@ -4,22 +4,12 @@ var ReactDOMServer = require('react-dom/server');
 class HomePage extends React.Component {
   render() {
     const { manifest } = this.props;
-    // console.log('userData', userData.DPUrl);
 
-    // const fcSettings = {
-    //   token: 'db46f4af-1e74-450d-bece-14bfee79b038',
-    //   host: 'https://wchat.freshchat.com',
-    //   siteId: `https://itsmybio.me/`, // OPTIONAL: id unique to your site
-    // };
     const fcSettingsString = `
       const fcSettings = {
             token: 'db46f4af-1e74-450d-bece-14bfee79b038',
             host: 'https://wchat.freshchat.com',
-            siteId: username,
-            externalId: username, // user's id unique to your system
-            firstName: userData.name, // user's first name
-            email: userData.contact.email, // user's email address
-            phone: userData.contact.phone, // phone number without country code
+            siteId: 'Home Page',
           };
       `;
 
@@ -74,18 +64,13 @@ class HomePage extends React.Component {
           />
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
-          <script>
-            window.fcSettings = {JSON.stringify(fcSettings)}
-          </script>
+          <script dangerouslySetInnerHTML={{ __html: fcSettingsString }} />
           <script src="https://wchat.freshchat.com/js/widget.js" async />
-
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
           />
-          <script>
-            {gaString}
-          </script>
+          <script dangerouslySetInnerHTML={{ __html: gaString }} />
         </body>
       </html>
     );
@@ -95,17 +80,19 @@ class HomePage extends React.Component {
 class Site extends React.Component {
   render() {
     const { manifest, username, dpUrl, userData } = this.props;
-    // console.log('userData', userData.DPUrl);
-    const fcSettings = {
-      token: 'db46f4af-1e74-450d-bece-14bfee79b038',
-      host: 'https://wchat.freshchat.com',
-      siteId: `https://itsmybio.me/${username}`, // OPTIONAL: id unique to your site
-      externalId: username, // user’s id unique to your system
-      firstName: userData.name, // user’s first name
-      email: userData.contact.email, // user’s email address
-      phone: userData.contact.phone, // phone number without country code
-      phoneCountryCode: '+1', // phone’s country code
-    };
+
+    const fcSettingsString = `
+      const fcSettings = {
+            token: 'db46f4af-1e74-450d-bece-14bfee79b038',
+            host: 'https://wchat.freshchat.com',
+            siteId: username,
+            externalId: username, // user's id unique to your system
+            firstName: userData.name, // user's first name
+            email: userData.contact.email, // user's email address
+            phone: userData.contact.phone, // phone number without country code
+          };
+      `;
+
     const gaString = `
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -155,22 +142,13 @@ class Site extends React.Component {
           />
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
-          {/* <script>
-            window.fcSettings = {JSON.stringify(fcSettings)}
-          </script> */}
-
           <script dangerouslySetInnerHTML={{ __html: fcSettingsString }} />
           <script src="https://wchat.freshchat.com/js/widget.js" async />
-
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
           />
           <script dangerouslySetInnerHTML={{ __html: gaString }} />
-
-          {/* <script>
-            {gaString}
-          </script> */}
         </body>
       </html>
     );
