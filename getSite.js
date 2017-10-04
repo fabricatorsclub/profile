@@ -6,7 +6,7 @@ class HomePage extends React.Component {
     const { manifest } = this.props;
 
     const fcSettingsString = `
-      const fcSettings = {
+      window.fcSettings = {
             token: 'db46f4af-1e74-450d-bece-14bfee79b038',
             host: 'https://wchat.freshchat.com',
             siteId: 'Home Page',
