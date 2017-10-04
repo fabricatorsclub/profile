@@ -13,15 +13,15 @@ class HomePage extends React.Component {
           };
       `;
 
-    const gaString = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-107210137-1');
-    `;
+    // const gaString = `
+    //   window.dataLayer = window.dataLayer || [];
+    //   function gtag() {
+    //     dataLayer.push(arguments);
+    //   }
+    //   gtag('js', new Date());
+    //
+    //   gtag('config', 'UA-107210137-1');
+    // `;
     return (
       <html lang="en">
         <head>
@@ -66,11 +66,11 @@ class HomePage extends React.Component {
 
           <script dangerouslySetInnerHTML={{ __html: fcSettingsString }} />
           <script src="https://wchat.freshchat.com/js/widget.js" async />
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
           />
-          <script dangerouslySetInnerHTML={{ __html: gaString }} />
+          <script dangerouslySetInnerHTML={{ __html: gaString }} /> */}
         </body>
       </html>
     );
@@ -81,15 +81,15 @@ class Site extends React.Component {
   render() {
     const { manifest, username, dpUrl, userData } = this.props;
 
-    const gaString = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-107210137-1');
-    `;
+    // const gaString = `
+    //   window.dataLayer = window.dataLayer || [];
+    //   function gtag() {
+    //     dataLayer.push(arguments);
+    //   }
+    //   gtag('js', new Date());
+    //
+    //   gtag('config', 'UA-107210137-1');
+    // `;
     return (
       <html lang="en">
         <head>
@@ -130,11 +130,11 @@ class Site extends React.Component {
           />
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-107210137-1"
           />
-          <script dangerouslySetInnerHTML={{ __html: gaString }} />
+          <script dangerouslySetInnerHTML={{ __html: gaString }} /> */}
         </body>
       </html>
     );
