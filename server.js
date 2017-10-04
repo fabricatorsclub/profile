@@ -4,8 +4,7 @@ const firebase = require('firebase');
 const app = express();
 const getSite = require('./getSite');
 
-// app.use(express.static('build/'));
-app.use(express.static('https://cdn.itsmybio.me/'));
+app.use(express.static('build/'));
 
 const manifestStr = fs.readFileSync('./build/asset-manifest.json', {
   encoding: 'utf8',
