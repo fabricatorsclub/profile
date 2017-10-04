@@ -4,7 +4,8 @@ const firebase = require('firebase');
 const app = express();
 const getSite = require('./getSite');
 
-app.use(express.static('build/'));
+// app.use(express.static('build/'));
+app.use(express.static('https://cdn.itsmybio.me/'));
 
 const manifestStr = fs.readFileSync('./build/asset-manifest.json', {
   encoding: 'utf8',
@@ -84,5 +85,5 @@ app.get('/:username', function(req, res) {
 });
 
 app.listen(80, function() {
-  console.log('Example app listening on port 3000!');
+  console.log('Example app listening on port 80!');
 });
