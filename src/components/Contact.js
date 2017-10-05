@@ -8,7 +8,7 @@ class Contact extends Component {
       <dl className="social-profiles">
         {contact.email &&
           <span>
-            <dt>Email </dt>
+            <dt>Email</dt>
             <dd>
               <a href={`mailto: ${contact.email}`}>
                 {contact.email}
@@ -18,7 +18,7 @@ class Contact extends Component {
 
         {contact.phone &&
           <span>
-            <dt>Phone </dt>
+            <dt>Phone</dt>
             <dd>
               <a href={`tel: ${contact.phone}`}>
                 {contact.phone}
@@ -27,7 +27,7 @@ class Contact extends Component {
           </span>}
 
         <span>
-          <dt>Find me on </dt>
+          <dt>Find me on</dt>
           <dd className="social">
             {contact.facebook &&
               <a href={contact.facebook} target="_blank">
