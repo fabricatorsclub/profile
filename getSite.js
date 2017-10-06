@@ -103,11 +103,11 @@ class Site extends React.Component {
             {userData.name}
           </title>
           <meta property="og:type" content="website" />
-          <meta property="og:title" content={userData.name} />
           <meta
-            property="og:site_name"
-            content={`${userData.name}'s Online Bio`}
+            property="og:title"
+            content={`${userData.name} - itsmybio.me`}
           />
+          <meta property="og:site_name" content="itsmybio.me" />
           <meta property="og:url" content={`https://itsmybio.me/${username}`} />
           <meta property="og:description" content={userData.shortDesc} />
           <meta property="og:image" content={userData.DPUrl} />

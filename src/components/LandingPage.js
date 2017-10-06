@@ -43,19 +43,13 @@ class LandingPage extends Component {
                 </div>
               </div>
 
-              <h3>How do we know</h3>
+              <h3>You are what you do!</h3>
 
-              <h1>Morar ji Desai lived 99 years?</h1>
+              <h1>
+                Aspire to do<br /> what keeps you intrigued!
+              </h1>
 
-              <p>
-                It is written in their Biography.<br />
-                So, Why don't you write your own bio now?
-              </p>
-
-              <p>
-                Your professional Bio can speak lot more than your CV.<br />
-                Build your online <span>Bio</span> for free.
-              </p>
+              <p>Let the world know your professional interests.</p>
 
               <a
                 href="https://account.itsmybio.me/register"
