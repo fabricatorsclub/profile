@@ -147,7 +147,25 @@ body {
         font-size: 30px;
         // font-weight: bolder;
         padding: 9px 3px;
-        color: rgba(#000000, 0.3);
+        color: #000000;
+        @include opacity(0.8);
+
+        &:after {
+          content: "BETA";
+          font-family: $sans-serif-font;
+          background: #eb3d3d;
+          color: #fff;
+          @include border-radius(3px);
+          display: inline-block;
+          font-size: 11px;
+          line-height: 15px;
+          padding: 0 6px 2px 5px;
+          margin-left: 5px;
+        }
+
+        &:hover {
+          @include opacity(1);
+        }
       }
     }
     & > .profilePicWrapper {

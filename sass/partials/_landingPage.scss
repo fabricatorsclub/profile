@@ -51,6 +51,19 @@
             font-size: 24px;
             min-width: 200px;
             flex: 1;
+
+            &:after {
+              content: "BETA";
+              font-family: $sans-serif-font;
+              background: #eb3d3d;
+              color: #fff;
+              @include border-radius(3px);
+              display: inline-block;
+              font-size: 11px;
+              line-height: 15px;
+              padding: 0 6px 2px 5px;
+              margin-left: 5px;
+            }
           }
           & .signCTA {
             min-width: 200px;
