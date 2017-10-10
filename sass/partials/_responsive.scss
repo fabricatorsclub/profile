@@ -30,12 +30,28 @@
         }
 
         & .home-menu {
-          & .initial {
+          & .initial,
+          & .signup {
             position: absolute;
             z-index: 9;
             top: 15px;
+          }
+          & .initial {
             left: 15px;
             font-size: 20px;
+          }
+          & .signup {
+            right: 15px;
+            min-width: 45px;
+            text-align: center;
+
+            & .fa {
+              margin: 0;
+            }
+
+            & .text {
+              display: none;
+            }
           }
         }
 

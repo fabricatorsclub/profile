@@ -73,9 +73,21 @@ class Sidebar extends Component {
     return (
       <div className="sidebar" style={{ backgroundColor: `${themeColor}` }}>
         <div className="home-menu">
-          <Link to={`/${match.params.username}`} className="initial">
+          {/* <Link to={`/${match.params.username}`} className="initial">
+            Itsmybio.me
+          </Link> */}
+          <Link to={`/`} className="initial">
             Itsmybio.me
           </Link>
+
+          <a
+            href="https://account.itsmybio.me/wizard/username"
+            className="signup"
+            target="_blank"
+          >
+            <span className="fa fa-plus" />{' '}
+            <span className="text">Create your page</span>
+          </a>
         </div>
 
         <div className="profilePicWrapper" style={this.props.imgStyle}>
