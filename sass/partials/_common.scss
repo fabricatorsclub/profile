@@ -425,6 +425,29 @@ body {
         display: inline-block;
       }
     }
+    & .testResultWrapper {
+      margin: -15px 0 25px;
+
+      & > a {
+        background: $primary-color;
+        color: #fff;
+        @include border-radius(15px);
+        padding: 3px 13px 5px;
+        display: inline-block;
+        border: 1px solid $primary-color;
+        cursor: pointer;
+        @include transition-duration(.1s);
+
+        & > .fa {
+          margin-left: 3px;
+        }
+
+        &:hover {
+          color: $primary-dark-color;
+          background: #fff;
+        }
+      }
+    }
     & p {
       font-family: $serif-font;
       font-size: 20px;
@@ -532,8 +555,9 @@ h1 {
     &.message {
       margin: 0 0 30px;
     }
-    & strong {
-      font-weight: bolder;
-    }
   }
+}
+
+strong {
+  font-weight: bolder;
 }

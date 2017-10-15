@@ -1,0 +1,67 @@
+@import "compass/css3";
+@import "partials/constants";
+
+.popup {
+  position: fixed;
+  z-index: 1000000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+
+  & > .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba($primary-color, 0.95);
+  }
+
+  & > .container {
+    background: #fff;
+    margin: 100px auto;
+    max-width: 650px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    // border: 1px solid rgba($primary-color, 0.2);
+    @include border-radius(3px);
+    @include box-shadow(rgba($primary-color, 0.1) 0px 5px 25px);
+
+    & > .popupHeader {
+      border-bottom: 1px solid rgba($primary-color, 0.2);
+      padding: 15px;
+
+      & > h1 {
+        margin: 0;
+      }
+    }
+    & > .popupBody {
+      padding: 30px 45px 0;
+
+      & p {
+        font-family: $sans-serif-font !important;
+        font-size: 18px !important;
+        line-height: 32px !important;
+        margin: 0 0 25px !important;
+      }
+    }
+    & > .popupFooter {
+      padding-right: 15px;
+      text-align: right;
+
+      & .btn {
+        padding: 14px 20px;
+        margin: 15px 0 15px 15px;
+
+        &.btn-default {
+          background: #fff;
+          border: 1px solid rgba($primary-color, 0.2);
+        }
+      }
+    }
+  }
+}

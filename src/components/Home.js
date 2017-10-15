@@ -3,15 +3,24 @@ import { Helmet } from 'react-helmet';
 import FontAwesome from 'react-fontawesome';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Contact from './Contact';
+import PersonalityPopup from '../personality/popup';
 
 class Home extends Component {
   state = {
     name: null,
     notFOund: false,
+    popupOpen: false,
+  };
+
+  handlePopup = () => {
+    this.setState({
+      popupOpen: true,
+    });
   };
 
   render() {
     const { data, match } = this.props;
+    console.log('data', data);
     const { notFOund } = this.state;
     if (notFOund) {
       return <div>Unable to find user</div>;
@@ -49,6 +58,19 @@ class Home extends Component {
               );
             })}
           </span>
+
+          {data.ShowMBTIOnProfile === true &&
+            <div className="testResultWrapper">
+              <a onClick={this.handlePopup}>
+                <span>Personality type:</span>{' '}
+                <strong>{data.MBTIResult}</strong>{' '}
+                <span className="fa fa-ellipsis-h" />
+              </a>
+              <PersonalityPopup
+                code={data.MBTIResult}
+                open={this.state.popupOpen}
+              />
+            </div>}
 
           <p>
             {data.shortDesc}

@@ -125,6 +125,19 @@
       }
     }
   }
+  .popup > .container {
+    margin: 0 !important;
+
+    & > .popupFooter {
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column-reverse;
+
+      & > .btn {
+        width: 95%;
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
