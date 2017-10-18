@@ -25,6 +25,262 @@ export const ENTJ = {
 
     "The ENTJ has many gifts which make it possible for them to have a great deal of personal power, if they don't forget to remain balanced in their lives. They are assertive, innovative, long-range thinkers with an excellent ability to translate theories and possibilities into solid plans of action. They are usually tremendously forceful personalities, and have the tools to accomplish whatever goals they set out for.",
   ],
+  SW: [
+    ['h2', 'Commander Strengths'],
+    ['h3', 'Efficient'],
+    [
+      'p',
+      'Commanders see inefficiency not just as a problem in its own right, but as something that pulls time and energy away from all their future goals, an elaborate sabotage consisting of irrationality and laziness. People with the Commander personality type will root out such behavior wherever they go.',
+    ],
+    ['h3', 'Energetic'],
+    [
+      'p',
+      'Rather than finding this process taxing Commanders are energized by it, genuinely enjoying leading their teams forward as they implement their plans and goals.',
+    ],
+    ['h3', 'Self-Confident'],
+    [
+      'p',
+      'Commanders couldn’t do this if they were plagued by self-doubt – they trust their abilities, make known their opinions, and believe in their capacities as leaders.',
+    ],
+    ['h3', 'Strong-Willed'],
+    [
+      'p',
+      'Nor do they give up when the going gets tough – Commander personalities strive to achieve their goals, but really nothing is quite as satisfying to them as rising to the challenge of each obstacle in their run to the finish line.',
+    ],
+    ['h3', 'Strategic Thinkers'],
+    [
+      'p',
+      'Commanders exemplify the difference between moment-to-moment crisis management and navigating the challenges and steps of a bigger plan, and are known for examining every angle of a problem and not just resolving momentary issues, but moving the whole project forward with their solutions.',
+    ],
+    ['h3', 'Charismatic and Inspiring'],
+    [
+      'p',
+      'These qualities combine to create individuals who are able to inspire and invigorate others, who people actually want to be their leaders, and this in turn helps Commanders to accomplish their often ambitious goals that could never be finished alone.',
+    ],
+    ['h2', 'Commander Weaknesses'],
+    ['h3', 'Stubborn and Dominant'],
+    [
+      'p',
+      'Sometimes all this confidence and willpower can go too far, and Commanders are all too capable of digging in their heels, trying to win every single debate and pushing their vision, and theirs alone.',
+    ],
+    ['h3', 'Intolerant'],
+    [
+      'p',
+      "'It’s my way or the highway' – People with the Commander personality type are notoriously unsupportive of any idea that distracts from their primary goals, and even more so of ideas based on emotional considerations. Commanders won’t hesitate a second to make that fact clear to those around them.",
+    ],
+    ['h3', 'Impatient'],
+    [
+      'p',
+      'Some people need more time to think than others, an intolerable delay to quick-thinking Commanders. They may misinterpret contemplation as stupidity or disinterest in their haste, a terrible mistake for a leader to make.',
+    ],
+    ['h3', 'Arrogant'],
+    [
+      'p',
+      'Commander personalities respect quick thoughts and firm convictions, their own qualities, and look down on those who don’t match up. This relationship is a challenge for most other personality types who are perhaps not timid in their own right, but will seem so beside overbearing Commanders.',
+    ],
+    ['h3', 'Poor Handling of Emotions'],
+    [
+      'p',
+      'All this bluster, alongside the assumed supremacy of rationalism, makes Commanders distant from their own emotional expression and sometimes downright scornful of others’. People with this personality type often trample others’ feelings, inadvertently hurting their partners and friends, especially in emotionally charged situations.',
+    ],
+    ['h3', 'Cold and Ruthless'],
+    [
+      'p',
+      'Their obsession with efficiency and unwavering belief in the merits of rationalism, especially professionally, makes Commanders incredibly insensitive in pursuing their goals, dismissing personal circumstances, sensitivities, and preferences as irrational and irrelevant.',
+    ],
+  ],
+  romanticRelationships: [
+    ['h2', 'COMMANDER RELATIONSHIPS'],
+    [
+      'p',
+      'As in other areas of their lives, Commanders approach dating and relationships with a set of goals and a plan to achieve them, and proceed to do so with impressive energy and enthusiasm. People with the Commander personality type are in it to win, and will gladly take leading roles in relationships from the start, assuming personal responsibility for how smoothly things go and working actively to ensure a mutually rewarding experience. Romantic relationships are a serious business, and Commanders are in it for the long haul.',
+    ],
+    ['h3', 'We Cannot Succeed Unless, When We Choose, We Choose Wisely'],
+    [
+      'p',
+      'This sense of personal responsibility means that Commanders put a lot of energy into their relationships, and they show their creativity by always having something new on the agenda to keep things interesting, especially in the dating phase. At the same time though, Commander personalities keep their eyes on the long term, and if they determine that a relationship is heading towards a dead end, they will cut their losses and move on in what will seem to their partner an abrupt end to the attention they had been receiving.',
+    ],
+    [
+      'p',
+      'This occasional ruthlessness with personal relationships is Commanders’ primary weakness, and if they aren’t careful they can develop quite the reputation. Sensing others’ feelings and emotions will never be a comfortable skill for Commanders, but it is critical that they work consciously to develop it, both for their partners’ sake and for their own healthy emotional expression. If they don’t, they risk dominating and overruling their partners, and this insensitivity can easily break a relationship, especially early on.',
+    ],
+    ['h3', 'Confidence Thrives on Unselfish Performance'],
+    [
+      'p',
+      'But as all goes well in the dating phase and a future is deemed viable, people with the Commander personality type continue to impress with their creativity and energy. Their authentic confidence makes Commanders’ sex life dynamic to say the least, and they often push to explore new ways to express their affection with imaginative enthusiasm. Yet Commanders tend to have these innovations planned in advance, with some structure and predictability to their sex lives, leaving the true spontaneity to those less organized personality types.',
+    ],
+    [
+      'p',
+      'Commanders are extremely growth-oriented, and will seize any opportunity to improve themselves, listening to and acting on criticisms, so long as they are logical ones, and always striving to improve their knowledge. At the same time, Commanders expect this of their partners, and it is surprising to them that others don’t always share this attitude. Still more surprising to Commander personalities is others’ active efforts to avoid these tense situations.',
+    ],
+    [
+      'p',
+      'Commanders in particular would do well to remember that their approach is just one angle of a multi-faceted spectrum of alternatives. While Commanders may view criticism as the most efficient route (and they’re often right), they should bear in mind that their partners may be more interested in emotional support and growth, an area of self-improvement that Commanders themselves too often avoid.',
+    ],
+    [
+      'blockquote',
+      'As with most things, balance is key, and Commanders should strive to meet their partners half-way, whatever their needs, be it through honest criticisms or steady emotional support and praise.',
+    ],
+    [
+      'p',
+      'As with other Analyst types, Commanders’ best matches are with other Intuitive (N) types, with one or two opposing traits to create more balance in the relationship. Mature Commanders are able to recognize and adapt to the needs of their partners, and know that even the most rational individuals have emotional needs that must be met. Fortunately the same logic that dismisses emotions is also able to recognize that a conciliatory attitude can be the best tool to get the job done. With their strong senses of responsibility and dedication, people with the Commander personality type are sure to make this effort, resulting in long-lasting, satisfying relationships.',
+    ],
+  ],
+  friends: [
+    ['h2', 'COMMANDER FRIENDS'],
+    [
+      'p',
+      'As in most aspects of their lives, in friendship Commanders seek personal growth and inspiration, and they often have a plan for how to accomplish it. Friendships of circumstance, built on things like shared routines, are not Commanders’ preferred method – rather, they pursue their friends, seek out individuals who share their passion for deep, meaningful discussions, and who enjoy learning and development as much as they do. It is not always easy to be Commanders’ friends – they demand a lot from these relationships – but they pay a great deal of attention to their friendships, and it is unlikely that it will ever feel stagnant.',
+    ],
+    [
+      'p',
+      'Commander friendships are built on ideas, and a lot of what they find enjoyable is the repartee of putting thoughts forward and defending them from assault from every angle. People with the Commander personality type are very smart and highly critical, and they won’t back down if they are put on the defensive – in fact, there’s no better way to earn their respect.',
+    ],
+    [
+      'blockquote',
+      'It’s not easy to stand up to a personality as big and blustery as Commanders’, and they too often find that others crumple under the force they apply when they really start to enjoy themselves.',
+    ],
+    [
+      'p',
+      'Only the most hardened rationalists are able to hold their ground against strongly expressed Commander personalities, who neither need emotional support, nor understand others’ need for it. This lack of sensitivity is Commanders’ chiefest weakness. Their tendency to challenge their friends, question their conclusions, and dismiss emotional arguments as irrelevant is especially difficult for Feeling-oriented friends to cope with. Either a point is supported by logic and reason, or it is erroneous.',
+    ],
+    ['h3', 'Prisoners of Our Own Minds'],
+    [
+      'p',
+      'More enlightened Commanders recognize that if ever there was an area where they could learn from others and improve themselves, it is in the realm of emotional sensitivity – to dismiss any aspect of personal growth borders on hypocrisy. Friendships with people from the Diplomat type group can be especially rewarding for Commanders, as the shared Intuitive (N) trait fosters an instantaneous connection that can bridge the chasm between their uninhibited logic and the recognition that cooperation and conciliation can often accomplish more than that logic ever could alone.',
+    ],
+    [
+      'p',
+      'Still, the bulk of Commanders’ friends will likely fall into the Analyst category, as all of these types share the same passion for logical, far-reaching ideas and critical debate. Anyone who can match Commanders’ ability to brainstorm and theorize will find an honest and dedicated friend. Anyone who can’t or won’t, as with many more down-to-earth types who often question the point of such discussions, will find themselves ignored – perhaps a situation that is best for everyone.',
+    ],
+  ],
+  parenthood: [
+    ['h2', 'COMMANDER PARENTS'],
+    [
+      'p',
+      'Often, given their strong will and critical nature, it is challenging enough to spend a great deal of time with Commanders by choice, as in friendships and romance – to be with them by default, as in the parent-child relationship, can border on the impossible. This by no means suggests that people with the Commander personality type are bad parents – far from it – simply that their relationships with children, who are typically more sensitive and less able to conduct truly rational analysis, require a great deal more emotional tact and personal liberty than they are accustomed to giving.',
+    ],
+    [
+      'p',
+      'But Commanders are always up for a challenge, and will take their roles as parents seriously and with the utmost sense of personal responsibility. Holding themselves to a higher standard than most, Commander personalities see the success of their children as a reflection of those personal standards, and want nothing more than to see them grow into smart, independent people who strive to achieve their goals. Establishing specific moral values is less important to Commanders than the cultivation of the intellect and independent, rational thought.',
+    ],
+    ['h3', 'Rules Need Not Be Sacred'],
+    [
+      'p',
+      'Commanders welcome differences of opinion, and this is true with their children as well. But while gladly having rational, well-thought-out discussions about roles and responsibilities, at the end of the day Commanders expect their authority to be respected. A disagreement is no excuse for shirking established responsibilities, and Commander parents can be utterly uncompromising in maintaining this structure. This strictness can be a tremendous source of tension in the household – a little flexibility can go a long way.',
+    ],
+    [
+      'p',
+      'When these debates devolve into emotional appeals is when Commander parents run into real trouble, as their persistent weakness with emotional tolerance makes dealing with growing children, especially adolescents, their most significant challenge. As in their other relationships, Commander parents should strive to strengthen this skill – often enough young children don’t have the words to express their needs rationally, and adolescents don’t have the patience for it, a perfectly natural condition.',
+    ],
+    [
+      'blockquote',
+      'By learning to listen to emotional expression as a valid form of communication and responding in kind, Commanders can help to minimize emotional conflicts with their children, building trust that will help to smooth the otherwise rebellious teenage years.',
+    ],
+    ['h3', 'A Rendezvous With Destiny'],
+    [
+      'p',
+      'Commander parents should remember that a part of developing that necessary sense of independence is being able to control one’s own schedule and activities, to chart one’s own course, at least to a certain extent. People with the Commander personality type will spare no effort for their children, but it’s sometimes the case that taking a deep breath and loosening their structures as their children grow and mature does more to achieve their goal of raising capable, intelligent adults than forced extracurriculars ever could.',
+    ],
+  ],
+  careers: [
+    ['h2', 'COMMANDER CAREERS'],
+    [
+      'p',
+      'It is in the world of careers that Commanders’ boldness and drive are truly at their best. No other personality type is better suited than Commanders to be the respected leader of an organization or team, and no other personality type enjoys it quite so much. Combining their vision, intelligence and determination to push ideas through to completion no matter the obstacles, Commanders are a force to be reckoned with.',
+    ],
+    ['h3', 'We All Go Up, or We All Go Down'],
+    [
+      'p',
+      'In the world of business, the sometimes overbearing level of self-confidence that Commanders (especially Assertive ones) too often mishandle in their personal relationships is transformed into an admirable authority, keeping people on track and getting things done. Naturally the best careers for people with the Commander personality type make the fullest use of these qualities, and many would describe executive positions and entrepreneurialism to be ideal lines of work – any position high enough that they can clearly see the horizon.',
+    ],
+    [
+      'blockquote',
+      'For Commanders, failure is not an option – they conceive a vision of the future, formulate a strategy to achieve that vision, and execute each step with ruthless precision.',
+    ],
+    [
+      'p',
+      'Structure and order are key, and if someone gets sloppy, or holds things back with incompetence, laziness or inefficiency, Commanders will not hesitate to come down, hard. Commander personalities pursue their goals with singular vision, and have strict standards for themselves and others that are designed above all else to be effective. This makes Commanders excellent corporate strategists, and their objectivity and clarity of thought make them respected lawyers and judges.',
+    ],
+    [
+      'p',
+      'None of this could work if no one could understand what Commanders were thinking, and they have the good fortune of being clear and concise communicators, especially in person, making business administration a comfortable fit – so long as their tasks don’t stray too far into routine maintenance and upkeep. Commanders also have a thirst for knowledge, and they aren’t afraid to use a principle once they’ve grasped its underlying mechanisms. Combining this with their leadership makes Commanders trying, but effective, university professors.',
+    ],
+    ['h3', 'We Are Still in the Making'],
+    [
+      'p',
+      'The only problem is, it takes time for Commanders’ skills to be recognized, and stagnating as low-level employees will have them bouncing off the walls and deeply unhappy. People with the Commander personality type crave leadership and responsibility, growth and opportunity, and genuinely enjoy managing others to get a job done. Commanders are visionaries and leaders, not grunts or day-to-day administrators. Getting that to be recognized is not always easy, but Commanders are probably up to the task.',
+    ],
+  ],
+  workplace: [
+    ['h2', 'COMMANDERS IN THE WORKPLACE'],
+    [
+      'p',
+      'For people with the Commander personality type, the workplace is all but a natural habitat. Commanders’ efficiency and clear communication are valued, their leadership is admired, and their ability to simply get things done is unrivaled. That being said, some situations are more appropriate for Commanders than others – these qualities all point to a managerial or executive role, making any position of comparative powerlessness highly undesirable.',
+    ],
+    [
+      'blockquote',
+      'Commander personality types are strident ones though, able to adapt themselves to just about any hierarchical relationship by doing what they do best: asserting their opinions, taking the initiative, and accomplishing feats that others thought impossible.',
+    ],
+    ['h3', 'Commander Subordinates'],
+    [
+      'p',
+      'Subordinate positions are challenging for Commanders, and it takes active management to ensure their satisfaction and engagement. Ever the high achievers, Commander subordinates set out to learn new skills and to seek out new challenges and responsibilities, eager to prove that nothing is impossible with a little hard work. If things get a little slow, Commander personalities may slip into periods of absentmindedness, but when they feel involved in the projects around them, they prove well organized and well prioritized.',
+    ],
+    [
+      'p',
+      'Commanders hold themselves to very high standards, but a lot of what sets this tone is feedback from their environment – namely, criticism from their managers. Objective, rational statements about what is done right and what can be done better are helpful to Commanders, and far from resenting such criticisms, they appreciate them. Opportunities for growth keep people with the Commander personality type engaged and productive, and so long as their managers recognize this as their primary responsibility, it will be a fruitful and satisfying relationship.',
+    ],
+    ['h3', 'Commander Colleagues'],
+    [
+      'p',
+      'Among colleagues, Commanders are sociable and greatly enjoy sharing ideas and critiques in their frequent brainstorming sessions. Natural leaders that they are, Commanders tend to assert themselves into positions as representatives and project leads, considering their objectivity and charisma the perfect qualities for these roles. Commander personalities enjoy working with equals, but people must demonstrate that they are equals – anyone Commanders view as being less competent or driven will see only condescension and arrogance.',
+    ],
+    [
+      'p',
+      'Commanders are strong-willed, even dominant, and though they enjoy inspiring and tutoring others, the energy they bring to the process can seem overbearing. When these roles are reversed, Commanders’ mentors should bear in mind that their students are very rational and respect firm confidence – hand-holding, emotional appeals or wavering indecision will likely burn the bridge then and there. In a partnership, what is best is what is most effective, and time wasted sugarcoating reality is just that – time wasted.',
+    ],
+    ['h3', 'Commander Managers'],
+    [
+      'p',
+      'Commander managers are confident, charismatic communicators, and they communicate but one vision: to get the job done as efficiently as possible, and to the highest standard of quality. All else is subordinate to that objective, but the means by which Commanders achieve it cause others to adopt this cause as their own. Commanders are natural leaders, and their ability to formulate a strategy and to identify the strengths of each member of their teams, incorporating those abilities into their plans so that each individual fills a unique and important role, makes them able motivators.',
+    ],
+    [
+      'p',
+      'But while these efforts boost morale and satisfaction among Commanders’ likeminded subordinates, they are still crafted to achieve that ultimate goal of timely and exceptional work. Those seen as inefficient by their Commander managers, or who demonstrate themselves to be lazy or to produce shoddy work will know in no uncertain terms of their failure to impress. The only way to recover is to comply, the only alternative is to find a new manager to impress, somewhere else.',
+    ],
+  ],
+  conclusion: [
+    ['h2', 'COMMANDER PERSONALITY – CONCLUSION'],
+    [
+      'p',
+      "Commanders' intelligence, strong will and logical reasoning skills are a force to be reckoned with. Be it a minor obstacle or a seemingly impossible task, Commanders will find a way – or make one. This fearsome determination and intellect allow Commanders to overcome many challenges.",
+    ],
+    [
+      'p',
+      'Yet Commanders can be easily tripped up in areas where careful and rational thinking is more of a liability than an asset. Whether it is finding (or keeping) a partner, connecting with other people, reaching dazzling heights on the career ladder or forcing themselves to relax, Commanders need to put in a conscious effort to develop their weaker traits and additional skills.',
+    ],
+    [
+      'p',
+      'What you have read so far is just an introduction into the complex concept that is the Commander personality type. You may have muttered to yourself, “wow, this is so accurate it’s a little creepy” or “finally, someone understands me!” You may have even asked “how do they know more about me than the people I’m closest to?”',
+    ],
+    [
+      'p',
+      'This is not a trick. You felt understood because you were. We’ve studied how Commanders think and what they need to reach their full potential. And no, we did not spy on you – many of the challenges you’ve faced and will face in the future have been overcome by other Commanders. You simply need to learn how they succeeded.',
+    ],
+    [
+      'p',
+      'But in order to do that, you need to have a plan, a personal roadmap. The best car in the world will not take you to the right place if you do not know where you want to go. We have told you how Commanders tend to behave in certain circumstances and what their key strengths and weaknesses are. Now we need to go much deeper into your personality type and answer “why?”, “how?” and “what if?”',
+    ],
+    [
+      'p',
+      'This knowledge is only the beginning of a lifelong journey. Are you ready to learn why Commanders act in the way they do? What motivates and inspires you? What you are afraid of and what you secretly dream about? How you can unlock your true, exceptional potential?',
+    ],
+    [
+      'p',
+      'Our premium profiles provide a roadmap towards a happier, more successful, and more versatile YOU. They are not for everyone though – you need to be willing and able to challenge yourself, to go beyond the obvious, to imagine and follow your own path instead of just going with the flow. If you want to take the reins into your own hands, we are here to help you.',
+    ],
+  ],
   similar: [
     'Steve Jobs',
     'Gordon Ramsay',
