@@ -3,7 +3,21 @@ import { Helmet } from 'react-helmet';
 import FontAwesome from 'react-fontawesome';
 
 class LandingPage extends Component {
+  state = {
+    menuOpen: false,
+  };
+
+  navClose() {
+    this.setState({ menuOpen: false });
+  }
+
+  navOpen() {
+    this.setState({ menuOpen: true });
+  }
+
   render() {
+    const { menuOpen } = this.state;
+
     return (
       <div id="landingPage">
         <Helmet>
@@ -28,6 +42,25 @@ class LandingPage extends Component {
           {/* <meta property="og:image" content={this.props.DPImage} /> */}
         </Helmet>
 
+        {menuOpen &&
+          <div className="mobileMenu">
+            <div className="heading">
+              <div className="container">
+                <span className="brand">Itsmybio.me</span>
+                <a onClick={this.navClose.bind(this)}>
+                  <span className="fa fa-close" />
+                </a>
+              </div>
+            </div>
+            <div className="container">
+              <a href="mailto: support@itsmybio.me">support@itsmybio.me</a>
+              <a href="https://account.itsmybio.me">Sign In</a>
+              <a href="https://account.itsmybio.me/register">
+                Sign Up <FontAwesome name="long-arrow-right" />
+              </a>
+            </div>
+          </div>}
+
         <div className="pageWrapper">
           <div className="banner">
             <div className="container">
@@ -35,7 +68,15 @@ class LandingPage extends Component {
                 <a className="brand" href="/">
                   Itsmybio.me
                 </a>
+
+                <div className="mobileMenuTrigger">
+                  <a onClick={this.navOpen.bind(this)}>
+                    <span className="fa fa-bars" />
+                  </a>
+                </div>
+
                 <div className="signCTA">
+                  <a href="mailto: support@itsmybio.me">support@itsmybio.me</a>
                   <a href="https://account.itsmybio.me">Sign In</a>
                   <a href="https://account.itsmybio.me/register">
                     Sign Up <FontAwesome name="long-arrow-right" />
