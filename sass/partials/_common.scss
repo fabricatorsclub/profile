@@ -148,7 +148,6 @@ body {
         // font-weight: bolder;
         padding: 9px 3px;
         color: #000000;
-        @include opacity(0.8);
 
         & > .badge {
           font-family: $sans-serif-font;
@@ -160,10 +159,6 @@ body {
           line-height: 15px;
           padding: 0 6px 2px 5px;
           margin-left: 5px;
-        }
-
-        &:hover {
-          @include opacity(1);
         }
       }
       & .signup {

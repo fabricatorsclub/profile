@@ -53,10 +53,13 @@ class App extends Component {
 
     const brightness = (r * 299 + g * 587 + b * 114) / 1000;
 
+    const Luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+
     console.log('R', r, 'G', g, 'B', b);
     console.log('color', brightness);
+    console.log('Luminance', Luminance);
 
-    if (brightness < 123) {
+    if (Luminance < 123) {
       this.setState({
         textColor: 'rgb(255,255,255)',
       });
