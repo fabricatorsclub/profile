@@ -124,7 +124,7 @@ class LandingPage extends Component {
 
           <div className="footer">
             <span>
-              Made with <FontAwesome name="heart" /> in india
+              Made with <FontAwesome name="heart" /> in India
             </span>
             <span>
               <FontAwesome name="copyright" /> All rights reserved
