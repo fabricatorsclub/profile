@@ -43,22 +43,42 @@ class LandingPage extends Component {
                 </div>
               </div>
 
-              <h3>You are what you do!</h3>
+              <div className="row">
+                <div className="col-md-5">
+                  <h3>You are what you do!</h3>
 
-              <h1>
-                Aspire to do<br /> what keeps you intrigued!
-              </h1>
+                  <h1>
+                    Aspire to do<br /> what keeps you intrigued!
+                  </h1>
 
-              <p>Let the world know your professional interests.</p>
+                  <p>Let the world know your professional interests.</p>
 
-              <a
-                href="https://account.itsmybio.me/register"
-                className="btn signup"
-              >
-                <span>Write your Bio for free</span>{' '}
-                <FontAwesome name="long-arrow-right" />
-              </a>
-              <img src={require('../images/macbook.png')} width="495" />
+                  <a
+                    href="https://account.itsmybio.me/register"
+                    className="btn signup"
+                  >
+                    <span>Write your Bio for free</span>{' '}
+                    <FontAwesome name="long-arrow-right" />
+                  </a>
+                </div>
+                <div className="col-md-7">
+                  <img src={require('../images/macbook.png')} width="675" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-sm-10">
+                <div className="hero-well">
+                  <h5>What’s new on itsmybio.me</h5>
+                  <h2>Take a FREE personality test</h2>
+                  <p>and know your personality in 4 simple clicks.</p>
+
+                  <img src={require('../images/people.png')} width="300" />
+                </div>
+              </div>
             </div>
           </div>
 
