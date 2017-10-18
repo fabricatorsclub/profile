@@ -69,21 +69,32 @@ class WorkExperience extends Component {
 
 class Sidebar extends Component {
   render() {
-    const { match, contact, themeColor } = this.props;
+    const { match, contact, themeColor, textColor } = this.props;
+
     return (
       <div className="sidebar" style={{ backgroundColor: `${themeColor}` }}>
         <div className="home-menu">
           {/* <Link to={`/${match.params.username}`} className="initial">
             Itsmybio.me
           </Link> */}
-          <Link to={`/`} className="initial">
+          <Link to={`/`} className="initial" style={{ color: `${textColor}` }}>
             Itsmybio.me
+            <span
+              className="badge"
+              style={{
+                backgroundColor: `${textColor}`,
+                color: `${themeColor}`,
+              }}
+            >
+              BETA
+            </span>
           </Link>
 
           <a
             href="https://account.itsmybio.me/wizard/username"
             className="signup"
             target="_blank"
+            style={{ color: `${textColor}` }}
           >
             <span className="fa fa-plus" />{' '}
             <span className="text">Create your page</span>
@@ -103,7 +114,7 @@ class Sidebar extends Component {
           />
         </div>
 
-        <Contact contact={contact} />
+        <Contact contact={contact} textColor={textColor} />
       </div>
     );
   }

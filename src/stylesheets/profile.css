@@ -224,8 +224,7 @@ body {
   opacity: 0.8;
 }
 /* line 153, ../../sass/partials/_common.scss */
-#profile .sidebar .home-menu .initial:after {
-  content: "BETA";
+#profile .sidebar .home-menu .initial > .badge {
   font-family: "Open Sans", sans-serif;
   background: #eb3d3d;
   color: #fff;
@@ -238,15 +237,14 @@ body {
   padding: 0 6px 2px 5px;
   margin-left: 5px;
 }
-/* line 166, ../../sass/partials/_common.scss */
+/* line 165, ../../sass/partials/_common.scss */
 #profile .sidebar .home-menu .initial:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 170, ../../sass/partials/_common.scss */
+/* line 169, ../../sass/partials/_common.scss */
 #profile .sidebar .home-menu .signup {
   font-family: "Open Sans", sans-serif;
-  background: #eb3d3d;
   color: #fff;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -256,11 +254,11 @@ body {
   padding: 0 6px 2px 5px;
   margin-left: 5px;
 }
-/* line 180, ../../sass/partials/_common.scss */
+/* line 178, ../../sass/partials/_common.scss */
 #profile .sidebar .home-menu .signup > .fa {
   margin: 0 5px 0 0;
 }
-/* line 185, ../../sass/partials/_common.scss */
+/* line 183, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper {
   -moz-box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.05);
@@ -274,7 +272,7 @@ body {
   left: 52%;
   background-color: #ffffff;
 }
-/* line 196, ../../sass/partials/_common.scss */
+/* line 194, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic, #profile .sidebar > .profilePicWrapper > .profilePic {
   position: absolute;
   top: 0;
@@ -284,27 +282,27 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 207, ../../sass/partials/_common.scss */
+/* line 205, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic {
   background: #fff;
   z-index: 2;
   overflow: auto;
 }
-/* line 212, ../../sass/partials/_common.scss */
+/* line 210, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .total-exp {
   flex-direction: column;
   display: flex;
   align-items: center;
   padding: 30px;
 }
-/* line 218, ../../sass/partials/_common.scss */
+/* line 216, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .total-exp .job-exp {
   font-weight: bolder;
   font-size: 25px;
   color: #e83435;
   margin: 10px 0 0;
 }
-/* line 225, ../../sass/partials/_common.scss */
+/* line 223, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .job-wrapper {
   background: #f4f7f8;
   -moz-box-shadow: inset 0 6px 5px 0 rgba(0, 0, 0, 0.02);
@@ -316,7 +314,7 @@ body {
   flex-wrap: wrap;
   position: relative;
 }
-/* line 234, ../../sass/partials/_common.scss */
+/* line 232, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .job-wrapper:before {
   content: "";
   width: 15px;
@@ -333,7 +331,7 @@ body {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 248, ../../sass/partials/_common.scss */
+/* line 246, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .job-wrapper > .job {
   flex-direction: column;
   display: flex;
@@ -341,7 +339,7 @@ body {
   min-width: 45%;
   padding: 15px;
 }
-/* line 256, ../../sass/partials/_common.scss */
+/* line 254, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .job-title {
   font-weight: bold;
   font-size: 13px;
@@ -349,82 +347,82 @@ body {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-/* line 263, ../../sass/partials/_common.scss */
+/* line 261, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .job-duration {
   color: #68717c;
   margin-bottom: 5px;
 }
-/* line 267, ../../sass/partials/_common.scss */
+/* line 265, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .job-exp {
   font-size: 20px;
   color: #68717c;
   margin-bottom: 5px;
 }
-/* line 272, ../../sass/partials/_common.scss */
+/* line 270, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .skills {
   padding: 30px;
 }
-/* line 275, ../../sass/partials/_common.scss */
+/* line 273, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .skills .job-title {
   margin-bottom: 15px;
   display: inline-block;
 }
-/* line 280, ../../sass/partials/_common.scss */
+/* line 278, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .skills > .skill {
   margin: 0 0 15px;
 }
-/* line 283, ../../sass/partials/_common.scss */
+/* line 281, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .infographic .skills > .skill > span {
   color: #68717c;
 }
-/* line 290, ../../sass/partials/_common.scss */
+/* line 288, ../../sass/partials/_common.scss */
 #profile .sidebar > .profilePicWrapper > .profilePic {
   background: url("/images/Photo.png") no-repeat top center;
   background-size: cover;
   z-index: 1;
 }
-/* line 296, ../../sass/partials/_common.scss */
+/* line 294, ../../sass/partials/_common.scss */
 #profile .sidebar > dl {
   line-height: 21px;
 }
-/* line 299, ../../sass/partials/_common.scss */
+/* line 297, ../../sass/partials/_common.scss */
 #profile .sidebar > dl > span {
   display: inline-block;
   width: 100%;
 }
-/* line 303, ../../sass/partials/_common.scss */
+/* line 301, ../../sass/partials/_common.scss */
 #profile .sidebar > dl > span:last-child dd {
   margin-bottom: 0;
 }
-/* line 308, ../../sass/partials/_common.scss */
+/* line 306, ../../sass/partials/_common.scss */
 #profile .sidebar > dl dt {
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 314, ../../sass/partials/_common.scss */
+/* line 312, ../../sass/partials/_common.scss */
 #profile .sidebar > dl dd {
   color: #fff;
   margin: 0 0 15px;
 }
-/* line 319, ../../sass/partials/_common.scss */
+/* line 317, ../../sass/partials/_common.scss */
 #profile .sidebar > dl dd.social a {
   color: #fff;
   padding-right: 15px;
   font-size: 16px;
   padding-right: 15px;
 }
-/* line 327, ../../sass/partials/_common.scss */
+/* line 325, ../../sass/partials/_common.scss */
 #profile .sidebar > dl dd a {
   color: #fff;
 }
-/* line 330, ../../sass/partials/_common.scss */
+/* line 328, ../../sass/partials/_common.scss */
 #profile .sidebar > dl dd a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 337, ../../sass/partials/_common.scss */
+/* line 335, ../../sass/partials/_common.scss */
 #profile .ProgressBar {
   width: 100%;
   height: 5px;
@@ -432,7 +430,7 @@ body {
   display: inline-block;
   position: relative;
 }
-/* line 344, ../../sass/partials/_common.scss */
+/* line 342, ../../sass/partials/_common.scss */
 #profile .ProgressBar > span {
   background: #2d343b;
   position: absolute;
@@ -440,7 +438,7 @@ body {
   top: 0;
   bottom: 0;
 }
-/* line 352, ../../sass/partials/_common.scss */
+/* line 350, ../../sass/partials/_common.scss */
 #profile .contentWrapper {
   flex: 1;
   padding: 25px;
@@ -450,37 +448,37 @@ body {
   flex-direction: column;
   box-sizing: content-box;
 }
-/* line 361, ../../sass/partials/_common.scss */
+/* line 359, ../../sass/partials/_common.scss */
 #profile .contentWrapper.home {
   justify-content: space-between;
 }
-/* line 364, ../../sass/partials/_common.scss */
+/* line 362, ../../sass/partials/_common.scss */
 #profile .contentWrapper.home .social-profiles {
   display: none;
   margin-top: 30px;
 }
-/* line 368, ../../sass/partials/_common.scss */
+/* line 366, ../../sass/partials/_common.scss */
 #profile .contentWrapper.home .social-profiles > span {
   margin: 0 0 15px;
   display: inline-block;
   width: 100%;
 }
-/* line 373, ../../sass/partials/_common.scss */
+/* line 371, ../../sass/partials/_common.scss */
 #profile .contentWrapper.home .social-profiles > span .social {
   margin-left: -5px;
 }
-/* line 376, ../../sass/partials/_common.scss */
+/* line 374, ../../sass/partials/_common.scss */
 #profile .contentWrapper.home .social-profiles > span .social .fa {
   padding: 10px 15px;
   margin: 5px;
   border: 1px solid #ccc;
 }
-/* line 387, ../../sass/partials/_common.scss */
+/* line 385, ../../sass/partials/_common.scss */
 #profile .contentWrapper.story .nav {
   position: fixed;
   z-index: 1000;
 }
-/* line 391, ../../sass/partials/_common.scss */
+/* line 389, ../../sass/partials/_common.scss */
 #profile .contentWrapper.story .nav + .menuMask {
   position: fixed;
   z-index: 1;
@@ -495,38 +493,38 @@ body {
   background-image: -webkit-linear-gradient(top, #ffffff 40%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, #ffffff 40%, rgba(255, 255, 255, 0) 100%);
 }
-/* line 401, ../../sass/partials/_common.scss */
+/* line 399, ../../sass/partials/_common.scss */
 #profile .contentWrapper.story .content {
   margin-top: 100px;
   margin-bottom: 100px;
   padding-left: 95px;
 }
-/* line 408, ../../sass/partials/_common.scss */
+/* line 406, ../../sass/partials/_common.scss */
 #profile .contentWrapper .content {
   padding-left: 210px;
 }
-/* line 411, ../../sass/partials/_common.scss */
+/* line 409, ../../sass/partials/_common.scss */
 #profile .contentWrapper .content p {
   white-space: pre-wrap;
 }
-/* line 416, ../../sass/partials/_common.scss */
+/* line 414, ../../sass/partials/_common.scss */
 #profile .contentWrapper .short-desc {
   color: #68717c;
   line-height: 21px;
   margin: -10px 0 25px;
   display: inline-block;
 }
-/* line 422, ../../sass/partials/_common.scss */
+/* line 420, ../../sass/partials/_common.scss */
 #profile .contentWrapper .short-desc > span {
   margin-right: 10px;
   margin-bottom: 5px;
   display: inline-block;
 }
-/* line 428, ../../sass/partials/_common.scss */
+/* line 426, ../../sass/partials/_common.scss */
 #profile .contentWrapper .testResultWrapper {
   margin: -15px 0 25px;
 }
-/* line 431, ../../sass/partials/_common.scss */
+/* line 429, ../../sass/partials/_common.scss */
 #profile .contentWrapper .testResultWrapper > a {
   background: #2d343b;
   color: #fff;
@@ -542,16 +540,16 @@ body {
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 441, ../../sass/partials/_common.scss */
+/* line 439, ../../sass/partials/_common.scss */
 #profile .contentWrapper .testResultWrapper > a > .fa {
   margin-left: 3px;
 }
-/* line 445, ../../sass/partials/_common.scss */
+/* line 443, ../../sass/partials/_common.scss */
 #profile .contentWrapper .testResultWrapper > a:hover {
   color: #000000;
   background: #fff;
 }
-/* line 451, ../../sass/partials/_common.scss */
+/* line 449, ../../sass/partials/_common.scss */
 #profile .contentWrapper p {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
@@ -560,7 +558,7 @@ body {
   margin: 0 0 25px;
 }
 
-/* line 462, ../../sass/partials/_common.scss */
+/* line 460, ../../sass/partials/_common.scss */
 dl.timeline dt {
   width: 50px;
   text-align: right;
@@ -570,7 +568,7 @@ dl.timeline dt {
   color: #2d343b;
   line-height: 24px;
 }
-/* line 471, ../../sass/partials/_common.scss */
+/* line 469, ../../sass/partials/_common.scss */
 dl.timeline dd {
   margin-left: 75px;
   margin-bottom: 15px;
@@ -580,7 +578,7 @@ dl.timeline dd {
   position: relative;
   padding-left: 25px;
 }
-/* line 480, ../../sass/partials/_common.scss */
+/* line 478, ../../sass/partials/_common.scss */
 dl.timeline dd:before {
   content: "\f10c";
   position: absolute;
@@ -594,7 +592,7 @@ dl.timeline dd:before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 495, ../../sass/partials/_common.scss */
+/* line 493, ../../sass/partials/_common.scss */
 h1 {
   font-family: "Roboto Slab", serif;
   font-size: 35px;
@@ -603,19 +601,19 @@ h1 {
   margin: 0 0 15px;
 }
 
-/* line 503, ../../sass/partials/_common.scss */
+/* line 501, ../../sass/partials/_common.scss */
 .fade-enter {
   opacity: 0;
   z-index: 1;
 }
 
-/* line 508, ../../sass/partials/_common.scss */
+/* line 506, ../../sass/partials/_common.scss */
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 250ms ease-in;
 }
 
-/* line 513, ../../sass/partials/_common.scss */
+/* line 511, ../../sass/partials/_common.scss */
 .loader {
   display: flex;
   flex: 1;
@@ -623,14 +621,14 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-/* line 520, ../../sass/partials/_common.scss */
+/* line 518, ../../sass/partials/_common.scss */
 .loader > .brand {
   font-family: "Yesteryear", cursive;
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-/* line 527, ../../sass/partials/_common.scss */
+/* line 525, ../../sass/partials/_common.scss */
 .notFound {
   display: flex;
   flex: 1;
@@ -638,15 +636,15 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-/* line 534, ../../sass/partials/_common.scss */
+/* line 532, ../../sass/partials/_common.scss */
 .notFound > span {
   font-size: 16px;
 }
-/* line 537, ../../sass/partials/_common.scss */
+/* line 535, ../../sass/partials/_common.scss */
 .notFound > span.foundMsg {
   text-align: center;
 }
-/* line 540, ../../sass/partials/_common.scss */
+/* line 538, ../../sass/partials/_common.scss */
 .notFound > span.foundMsg:before {
   content: "";
   display: block;
@@ -655,19 +653,19 @@ h1 {
   background: url("../images/notfound.jpg") no-repeat center center;
   margin: 0 0 25px;
 }
-/* line 549, ../../sass/partials/_common.scss */
+/* line 547, ../../sass/partials/_common.scss */
 .notFound > span.heading {
   font-family: "Roboto Slab", serif;
   font-size: 30px;
   line-height: 33px;
   margin: 9px 0 15px;
 }
-/* line 555, ../../sass/partials/_common.scss */
+/* line 553, ../../sass/partials/_common.scss */
 .notFound > span.message {
   margin: 0 0 30px;
 }
 
-/* line 561, ../../sass/partials/_common.scss */
+/* line 559, ../../sass/partials/_common.scss */
 strong {
   font-weight: bolder;
 }

@@ -19,8 +19,7 @@ class Home extends Component {
   };
 
   render() {
-    const { data, match } = this.props;
-    console.log('data', data);
+    const { data, match, textColor } = this.props;
     const { notFOund } = this.state;
     if (notFOund) {
       return <div>Unable to find user</div>;
@@ -80,7 +79,10 @@ class Home extends Component {
             <Link
               to={`${match.url}/profile/story`}
               className="btn btn-primary"
-              style={{ backgroundColor: `${data.themeColor}` }}
+              style={{
+                backgroundColor: `${data.themeColor}`,
+                color: `${textColor}`,
+              }}
             >
               See More <FontAwesome name="arrow-down" />
             </Link>}

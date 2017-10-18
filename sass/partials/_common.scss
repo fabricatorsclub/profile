@@ -150,8 +150,7 @@ body {
         color: #000000;
         @include opacity(0.8);
 
-        &:after {
-          content: "BETA";
+        & > .badge {
           font-family: $sans-serif-font;
           background: #eb3d3d;
           color: #fff;
@@ -169,7 +168,6 @@ body {
       }
       & .signup {
         font-family: $sans-serif-font;
-        background: #eb3d3d;
         color: #fff;
         @include border-radius(3px);
         display: inline-block;

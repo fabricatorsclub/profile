@@ -39,7 +39,6 @@ export const getDP = username => {
       // resolve(DPRef.location.path);
 
       DPRef.getDownloadURL().then(function(url) {
-        console.log('DPRef', url, DPRef.location.path);
         resolve(url);
       });
     });

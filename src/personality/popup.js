@@ -39,7 +39,7 @@ export default class PersonalityPopup extends Component {
     const similarPeople = PersonalityData[code].similar;
     const longDesc = PersonalityData[code].longDesc;
 
-    console.log(this.state.show, this.props.open);
+    console.log(PersonalityData[code]);
 
     return (
       <span>
@@ -64,6 +64,10 @@ export default class PersonalityPopup extends Component {
 
                   {this.state.longDesc &&
                     <div className="longDesc">
+                      {/* {longDesc.map(([tagName, text], i) =>
+                        React.createElement(tagName, { key: i }, text)
+                      )} */}
+
                       {longDesc.map((item, i) => {
                         return (
                           <p key={i}>
