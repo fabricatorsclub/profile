@@ -27,6 +27,70 @@ export const INFP = {
 
     'INFPs who function in their well-developed sides can accomplish great and wonderful things, which they will rarely give themselves credit for. Some of the great, humanistic catalysts in the world have been INFPs.',
   ],
+  SW: [
+    ['h2', 'Mediator Strengths'],
+    ['h3', 'Idealistic'],
+    [
+      'p',
+      'Mediators’ friends and loved ones will come to admire and depend on them for their optimism. Their unshaken belief that all people are inherently good, perhaps simply misunderstood, lends itself to an incredibly resilient attitude in the face of hardship.',
+    ],
+    ['h3', 'Seek and Value Harmony'],
+    [
+      'p',
+      'People with the Mediator personality type have no interest in having power over others, and don’t much care for domineering attitudes at all. They prefer a more democratic approach, and work hard to ensure that every voice and perspective is heard.',
+    ],
+    ['h3', 'Open-Minded and Flexible'],
+    [
+      'p',
+      'A live-and-let-live attitude comes naturally to Mediators, and they dislike being constrained by rules. Mediators give the benefit of the doubt too, and so long as their principles and ideas are not being challenged, they’ll support others’ right to do what they think is right.',
+    ],
+    ['h3', 'Very Creative'],
+    [
+      'p',
+      'Mediators combine their visionary nature with their open-mindedness to allow them to see things from unconventional perspectives. Being able to connect many far-flung dots into a single theme, it’s no wonder that many Mediators are celebrated poets and authors.',
+    ],
+    ['h3', 'Passionate and Energetic'],
+    [
+      'p',
+      'When something captures Mediators’ imagination and speaks to their beliefs, they go all in, dedicating their time, energy, thoughts and emotions to the project. Their shyness keeps them from the podium, but they are the first to lend a helping hand where it’s needed.',
+    ],
+    ['h3', 'Dedicated and Hard-Working'],
+    [
+      'p',
+      'While others focusing on the challenges of the moment may give up when the going gets tough, Mediators (especially Assertive ones) have the benefit of their far-reaching vision to help them through. Knowing that what they are doing is meaningful gives people with this personality type a sense of purpose and even courage when it comes to accomplishing something they believe in.',
+    ],
+    ['h2', 'Mediator Weaknesses'],
+    ['h3', 'Too Idealistic'],
+    [
+      'p',
+      'Mediators often take their idealism too far, setting themselves up for disappointment as, again and again, evil things happen in the world. This is true on a personal level too, as Mediators may not just idealize their partners, but idolize them, forgetting that no one is perfect.',
+    ],
+    ['h3', 'Too Altruistic'],
+    [
+      'p',
+      'Mediators sometimes see themselves as selfish, but only because they want to give so much more than they are able to. This becomes a self-fulfilling prophecy, as they try to push themselves to commit to a chosen cause or person, forgetting to take care of the needs of others in their lives, and especially themselves.',
+    ],
+    ['h3', 'Impractical'],
+    [
+      'p',
+      'When something captures Mediators’ imagination, they can neglect practical matters like day-to-day maintenance and simple pleasures. Sometimes people with the Mediator personality type will take this asceticism so far as to neglect eating and drinking as they pursue their passion or cause.',
+    ],
+    ['h3', 'Dislike Dealing With Data'],
+    [
+      'p',
+      'Mediators are often so focused on the big picture that they forget the forest is made of individual trees. Mediators are in tune with emotions and morality, and when the facts and data contradict their ideals, it can be a real challenge for them.',
+    ],
+    ['h3', 'Take Things Personally'],
+    [
+      'p',
+      'Mediators often take challenges and criticisms personally, rather than as inspiration to reassess their positions. Avoiding conflict as much as possible, Mediators will put a great deal of time and energy into trying to align their principles and the criticisms into a middle ground that satisfies everybody.',
+    ],
+    ['h3', 'Difficult to Get to Know'],
+    [
+      'p',
+      'Mediators are private, reserved and self-conscious. This makes them notoriously difficult to really get to know, and their need for these qualities contributes to the guilt they often feel for not giving more of themselves to those they care about.',
+    ],
+  ],
   similar: [
     'William Shakespeare',
     'J.R.R. Tolkien',
