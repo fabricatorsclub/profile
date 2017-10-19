@@ -25,6 +25,11 @@ class HomePage extends React.Component {
           <meta name="theme-color" content="#000000" />
           <title>Itsmybio.me | Your professional online bio</title>
 
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; font-src 'self' data: fonts.gstatic.com;"
+          />
+
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Itsmybio.me" />
           <meta
