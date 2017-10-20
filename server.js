@@ -68,7 +68,7 @@ app.get('/admin', function(req, res) {
   res.send('You have come to admin dashboard page');
 });
 
-app.get('/:username', function(req, res) {
+const someFn = function(req, res) {
   const { username } = req.params;
   getProfileData(username)
     .then(value => {
@@ -81,7 +81,10 @@ app.get('/:username', function(req, res) {
 
       console.log('some error', err);
     });
-});
+};
+
+app.get('/:username', someFn);
+app.get('/:username/profile/:something', someFn);
 
 app.listen(80, function() {
   console.log('Example app listening on port 80!');
