@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-import { PersonalityData } from './data';
-import $ from 'jquery';
+import { getPersonalityType } from '../helpers/read';
 
 export default class PersonalityPopup extends Component {
   state = {
     shortDesc: true,
     longDesc: null,
     show: false,
+    PersonalityType: null,
   };
+
+  componentWillMount() {
+    if (this.props.code !== this.state.PersonalityType) {
+      getPersonalityType(this.props.code).then(data => {
+        this.setState({
+          PersonalityType: data || [],
+        });
+      });
+    }
+  }
 
   componentWillReceiveProps(nextProps) {
     this.setState({ show: nextProps.open });
@@ -34,12 +44,17 @@ export default class PersonalityPopup extends Component {
 
   render() {
     const { code, open } = this.props;
-    const title = PersonalityData[code].title;
-    const shortDesc = PersonalityData[code].shortDesc;
-    const similarPeople = PersonalityData[code].similar;
-    const longDesc = PersonalityData[code].longDesc;
+    const PersonalityData = this.state.PersonalityType;
 
-    console.log(PersonalityData[code]);
+    if (!PersonalityData) {
+      return <div>Loading</div>;
+    }
+    const title = PersonalityData.title;
+    const shortDesc = PersonalityData.shortDesc;
+    const similarPeople = PersonalityData.similar;
+    const longDesc = PersonalityData.longDesc;
+
+    console.log('this.state.PersonalityType', this.state.PersonalityType);
 
     return (
       <span>

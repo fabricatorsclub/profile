@@ -44,3 +44,13 @@ export const getDP = username => {
     });
   });
 };
+
+export function getPersonalityType(type) {
+  const proRef = ref.child(`global/personality-types/${type}/`);
+
+  return proRef.once('value').then(function(Name) {
+    const NameVal = Name.val();
+    console.log(NameVal);
+    return NameVal;
+  });
+}
