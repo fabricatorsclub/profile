@@ -54,7 +54,17 @@ class HomePage extends React.Component {
           />
         </head>
         <body>
-          <div id="root" />
+          <div id="root">
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <p>Loading...</p>
+            </div>
+          </div>
           <link
             rel="stylesheet"
             href={`https://cdn.itsmybio.me/${manifest['main.css']}`}
@@ -118,7 +128,17 @@ class Site extends React.Component {
           />
         </head>
         <body>
-          <div id="root" />
+          <div id="root">
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <p>Loading...</p>
+            </div>
+          </div>
           <link
             rel="stylesheet"
             href={`https://cdn.itsmybio.me/${manifest['main.css']}`}
