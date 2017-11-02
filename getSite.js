@@ -103,6 +103,10 @@ class Site extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <meta
+            name="google-site-verification"
+            content="2z6n4tAtvTYWfVjPf5XA2PDllqlKpo8LTPsHChnkRBQ"
+          />
           <meta name="theme-color" content="#000000" />
           <title>
             {userData.name}
