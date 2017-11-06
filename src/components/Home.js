@@ -44,14 +44,14 @@ class Home extends Component {
 
         <div />
         <div className="content">
-          <h1>
+          <h1 itemprop="name">
             {data.name}
           </h1>
 
           <span className="short-desc">
             {data.who.map((data, index) => {
               return (
-                <span key={index}>
+                <span key={index} itemprop="jobTitle">
                   #{data.label}
                 </span>
               );
@@ -71,7 +71,7 @@ class Home extends Component {
               />
             </div>}
 
-          <p>
+          <p itemprop="publishingPrinciples">
             {data.shortDesc}
           </p>
 

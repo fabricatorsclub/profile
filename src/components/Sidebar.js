@@ -77,7 +77,12 @@ class Sidebar extends Component {
           {/* <Link to={`/${match.params.username}`} className="initial">
             Itsmybio.me
           </Link> */}
-          <Link to={`/`} className="initial" style={{ color: `${textColor}` }}>
+          <Link
+            to={`/`}
+            className="initial"
+            itemprop="brand"
+            style={{ color: `${textColor}` }}
+          >
             Itsmybio.me
             <span
               className="badge"
@@ -108,6 +113,7 @@ class Sidebar extends Component {
             render={() => <WorkExperience />}
           />
           <img
+            itemprop="image"
             className="profilePic"
             src="/images/blank.gif"
             style={{ backgroundImage: `url("${this.props.DPImage}")` }}

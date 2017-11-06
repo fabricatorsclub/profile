@@ -11,6 +11,7 @@ class Contact extends Component {
             <dt style={{ color: `${textColor}` }}>Email</dt>
             <dd style={{ color: `${textColor}` }}>
               <a
+                itemprop="email"
                 style={{ color: `${textColor}` }}
                 href={`mailto: ${contact.email}`}
               >
@@ -24,6 +25,7 @@ class Contact extends Component {
             <dt style={{ color: `${textColor}` }}>Phone</dt>
             <dd style={{ color: `${textColor}` }}>
               <a
+                itemprop="telephone"
                 style={{ color: `${textColor}` }}
                 href={`tel: ${contact.phone}`}
               >
