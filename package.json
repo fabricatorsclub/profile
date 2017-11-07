@@ -33,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "yarn run build; cp _redirects build/; cp sitemap.xml build/; cp robots.txt build/; netlify deploy",
+    "deploy": "yarn run build; cp _redirects build/; netlify deploy",
     "update": "git checkout .; git pull origin master; yarn run start"
   },
   "devDependencies": {

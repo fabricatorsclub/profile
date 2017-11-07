@@ -51,13 +51,15 @@ const getProfileData = username => {
   });
 };
 
-// getProfileData('gopiraja')
-//   .then(value => {
-//     const val = getSite({ userData: value, manifest });
-//   })
-//   .catch(err => {
-//     console.log('some error', err);
-//   });
+const getListOfUserNames = () => {
+  const unRef = ref.child(`usernames/`);
+
+  return proRef.once('value').then(function(Name) {
+    const NameVal = Name.val();
+    console.log(NameVal);
+    return NameVal;
+  });
+};
 
 app.get('/', function(req, res) {
   const val = getSite({ page: 'home_page', manifest });
@@ -83,9 +85,42 @@ const someFn = function(req, res) {
     });
 };
 
+const siteMapFn = function(req, res) {
+  getListOfUserNames()
+    .then(usernames => {
+      console.log('usernames', usernames);
+      const str = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+<loc>https://itsmybio.me/</loc>
+</url>
+${usernames.map(
+        username => `
+  <url>
+  <loc>https://itsmybio.me/${username}</loc>
+  </url>`
+      )}
+
+</urlset>`;
+      res.send(str);
+    })
+    .catch(err => {
+      res.send('user not found');
+
+      console.log('some error', err);
+    });
+};
+
+app.get('/sitemap.xml', siteMapFn);
 app.get('/:username', someFn);
 app.get('/:username/profile/:something', someFn);
 
-app.listen(80, function() {
+app.listen(5000, function() {
   console.log('Example app listening on port 80!');
 });
