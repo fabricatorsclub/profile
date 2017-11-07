@@ -24,6 +24,8 @@ const config = {
 firebase.initializeApp(config);
 
 const ref = firebase.database().ref();
+
+// Get Profile Data from firebase
 const getProfileData = username => {
   const unRef = ref.child(`usernames/${username}/`);
 
@@ -51,26 +53,7 @@ const getProfileData = username => {
   });
 };
 
-const getListOfUserNames = () => {
-  const unRef = ref.child(`usernames/`);
-
-  return proRef.once('value').then(function(Name) {
-    const NameVal = Name.val();
-    console.log(NameVal);
-    return NameVal;
-  });
-};
-
-app.get('/', function(req, res) {
-  const val = getSite({ page: 'home_page', manifest });
-  res.send(val);
-});
-
-app.get('/admin', function(req, res) {
-  res.send('You have come to admin dashboard page');
-});
-
-const someFn = function(req, res) {
+const ProfileDataFn = function(req, res) {
   const { username } = req.params;
   getProfileData(username)
     .then(value => {
@@ -83,6 +66,16 @@ const someFn = function(req, res) {
 
       console.log('some error', err);
     });
+};
+
+const getListOfUserNames = () => {
+  const unRef = ref.child(`usernames/`);
+
+  return unRef.once('value').then(function(Name) {
+    const NameVal = Name.val();
+    console.log(NameVal);
+    return NameVal;
+  });
 };
 
 const siteMapFn = function(req, res) {
@@ -117,9 +110,16 @@ ${usernames.map(
     });
 };
 
+app.get('/', function(req, res) {
+  const val = getSite({ page: 'home_page', manifest });
+  res.send(val);
+});
+app.get('/admin', function(req, res) {
+  res.send('You have come to admin dashboard page');
+});
 app.get('/sitemap.xml', siteMapFn);
-app.get('/:username', someFn);
-app.get('/:username/profile/:something', someFn);
+app.get('/:username', ProfileDataFn);
+app.get('/:username/profile/:something', ProfileDataFn);
 
 app.listen(5000, function() {
   console.log('Example app listening on port 80!');
