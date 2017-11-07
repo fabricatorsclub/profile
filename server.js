@@ -74,7 +74,7 @@ const getListOfUserNames = () => {
   return unRef.once('value').then(function(Name) {
     const NameVal = Name.val();
     console.log(NameVal);
-    return NameVal;
+    return Object.keys(NameVal);
   });
 };
 
@@ -88,22 +88,26 @@ const siteMapFn = function(req, res) {
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
 <loc>https://itsmybio.me/</loc>
 </url>
-${usernames.map(
-        username => `
+${usernames
+        .map(
+          username => `
   <url>
   <loc>https://itsmybio.me/${username}</loc>
   </url>`
-      )}
+        )
+        .join('')}
 
 </urlset>`;
+
+      res.set('Content-Type', 'text/xml');
       res.send(str);
     })
     .catch(err => {
+      console.log('some error', err);
       res.send('user not found');
 
       console.log('some error', err);
@@ -121,6 +125,6 @@ app.get('/sitemap.xml', siteMapFn);
 app.get('/:username', ProfileDataFn);
 app.get('/:username/profile/:something', ProfileDataFn);
 
-app.listen(5000, function() {
+app.listen(80, function() {
   console.log('Example app listening on port 80!');
 });
