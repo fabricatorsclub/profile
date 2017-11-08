@@ -136,6 +136,21 @@ app.get('/', function(req, res) {
     res.send('Domain not found');
   }
 });
+app.get('/profile/:something', function(req, res) {
+  const host = req.get('host');
+  console.log('host', host);
+  if (host === 'itsmybio.me' || host === 'localhost') {
+    res.send('Only allowed for custom domains');
+  } else if (hostsMap[host]) {
+    const username = hostsMap[host];
+    const req = {
+      params: { username, customDomain: true },
+    };
+    ProfileDataFn(req, res);
+  } else {
+    res.send('Domain not found');
+  }
+});
 app.get('/admin', function(req, res) {
   res.send('You have come to admin dashboard page');
 });

@@ -24,6 +24,7 @@ class Home extends Component {
     if (notFOund) {
       return <div>Unable to find user</div>;
     }
+    const matchUrl = match.url === '/' ? '' : match.url;
     return (
       <div className="contentWrapper home" style={this.props.style}>
         <Helmet>
@@ -77,7 +78,7 @@ class Home extends Component {
 
           {data.story &&
             <Link
-              to={`${match.url}/profile/story`}
+              to={`${matchUrl}/profile/story`}
               className="btn btn-primary"
               style={{
                 backgroundColor: `${data.themeColor}`,
@@ -94,25 +95,25 @@ class Home extends Component {
 
         {data.story &&
           <nav className="nav">
-            <Link to={`${match.url}/profile/story`} className="nav-link">
+            <Link to={`${matchUrl}/profile/story`} className="nav-link">
               <FontAwesome name="book" />
               <span>Story</span>
             </Link>
             <Link
-              to={`${match.url}/profile/work-experience`}
+              to={`${matchUrl}/profile/work-experience`}
               className="nav-link"
             >
               <FontAwesome name="briefcase" />
               <span>Work Experience</span>
             </Link>
             <Link
-              to={`${match.url}/profile/academic-qualification`}
+              to={`${matchUrl}/profile/academic-qualification`}
               className="nav-link"
             >
               <FontAwesome name="mortar-board" />
               <span>Academic Qualification</span>
             </Link>
-            <Link to={`${match.url}/profile/projects`} className="nav-link">
+            <Link to={`${matchUrl}/profile/projects`} className="nav-link">
               <FontAwesome name="black-tie" />
               <span>Projects</span>
             </Link>

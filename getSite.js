@@ -99,6 +99,7 @@ class Site extends React.Component {
 
       gtag('config', 'UA-107210137-1');
     `;
+    const customDomainStr = `var customDomain = "${username}";`;
     return (
       <html lang="en">
         <head>
@@ -148,9 +149,7 @@ class Site extends React.Component {
             href={`https://cdn.itsmybio.me/${manifest['main.css']}`}
           />
           {customDomain &&
-            <script>
-              var customDomain = "{username}";
-            </script>}
+            <script dangerouslySetInnerHTML={{ __html: customDomainStr }} />}
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
           <script
