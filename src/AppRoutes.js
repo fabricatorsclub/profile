@@ -21,29 +21,45 @@ const logPageView = () => {
   ReactGA.pageview(window.location.pathname + window.location.search);
 };
 
+const whichSwitch = window.customDomain
+  ? <Switch>
+      <Route
+        exact
+        path="/"
+        render={props =>
+          <App sidebarWidth={411} {...props} ChildComponent={Home} />}
+      />
+
+      <Route
+        path="/profile"
+        render={props => {
+          return <App sidebarWidth={316} {...props} ChildComponent={Story} />;
+        }}
+      />
+    </Switch>
+  : <Switch>
+      <Route exact path="/" component={LandingPage} />
+      <Route
+        exact
+        path="/:username"
+        render={props =>
+          <App sidebarWidth={411} {...props} ChildComponent={Home} />}
+      />
+
+      <Route
+        path="/:username/profile"
+        render={props => {
+          return <App sidebarWidth={316} {...props} ChildComponent={Story} />;
+        }}
+      />
+    </Switch>;
+
 class AppRoutes extends Component {
   render() {
     return (
       <Router onUpdate={logPageView}>
         <div id="profile">
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route
-              exact
-              path="/:username"
-              render={props =>
-                <App sidebarWidth={411} {...props} ChildComponent={Home} />}
-            />
-
-            <Route
-              path="/:username/profile"
-              render={props => {
-                return (
-                  <App sidebarWidth={316} {...props} ChildComponent={Story} />
-                );
-              }}
-            />
-          </Switch>
+          {whichSwitch}
         </div>
       </Router>
     );

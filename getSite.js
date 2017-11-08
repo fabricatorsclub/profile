@@ -147,10 +147,7 @@ class Site extends React.Component {
             rel="stylesheet"
             href={`https://cdn.itsmybio.me/${manifest['main.css']}`}
           />
-          {customDomain &&
-            <script>
-              var customDomain = {customDomain};
-            </script>}
+          {customDomain && <script>var customDomain = true;</script>}
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
           <script
