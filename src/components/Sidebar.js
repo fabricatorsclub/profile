@@ -113,7 +113,7 @@ class Sidebar extends Component {
         <div className="profilePicWrapper" style={this.props.imgStyle}>
           <Route
             exact
-            path={`//gopiraja.com/profile/work-experience`}
+            path={`/profile/work-experience`}
             render={() => <WorkExperience />}
           />
           <img
