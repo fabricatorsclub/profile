@@ -3,6 +3,7 @@ const express = require('express');
 const firebase = require('firebase');
 const app = express();
 const getSite = require('./getSite');
+const hostsMap = require('./hostsMap.json');
 
 app.use(express.static('build/'));
 
@@ -115,8 +116,20 @@ ${usernames
 };
 
 app.get('/', function(req, res) {
-  const val = getSite({ page: 'home_page', manifest });
-  res.send(val);
+  const host = req.get('host');
+  console.log('host', host);
+  if (host === 'itsmybio.me' || host === 'localhost') {
+    const val = getSite({ page: 'home_page', manifest });
+    res.send(val);
+  } else if (hostsMap[host]) {
+    const userName = hostsMap[host];
+    const req = {
+      params: { username },
+    };
+    ProfileDataFn(req, res);
+  } else {
+    res.send('Domain not found');
+  }
 });
 app.get('/admin', function(req, res) {
   res.send('You have come to admin dashboard page');
