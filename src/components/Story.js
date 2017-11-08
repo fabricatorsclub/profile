@@ -12,6 +12,7 @@ class Story extends Component {
     const data = this.props.data.story;
     console.log(data);
     const matchUrl = match.url === '/' ? '' : match.url;
+    const matchUrlName = match.url === '/' ? '' : match.params.username;
 
     return (
       <div id="story" className="contentWrapper story">
@@ -39,7 +40,7 @@ class Story extends Component {
             <FontAwesome name="black-tie" />
             <span>Projects</span>
           </NavLink>
-          <Link to={`/${match.params.username}`} className="nav-link">
+          <Link to={`/${matchUrlName}`} className="nav-link">
             <FontAwesome name="arrow-up" />
             <span>Home</span>
           </Link>
