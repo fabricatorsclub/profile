@@ -11,30 +11,31 @@ class Story extends Component {
     const { match } = this.props;
     const data = this.props.data.story;
     console.log(data);
+    const matchUrl = match.url === '/' ? '' : match.url;
 
     return (
       <div id="story" className="contentWrapper story">
         <nav className="nav">
           <NavLink
-            to={`${match.url}/story`}
+            to={`${matchUrl}/story`}
             className="nav-link"
             activeClassName="active"
           >
             <FontAwesome name="book" />
             <span>Story</span>
           </NavLink>
-          <NavLink to={`${match.url}/work-experience`} className="nav-link">
+          <NavLink to={`${matchUrl}/work-experience`} className="nav-link">
             <FontAwesome name="briefcase" />
             <span>Work Experience</span>
           </NavLink>
           <NavLink
-            to={`${match.url}/academic-qualification`}
+            to={`${matchUrl}/academic-qualification`}
             className="nav-link"
           >
             <FontAwesome name="mortar-board" />
             <span>Academic Qualification</span>
           </NavLink>
-          <NavLink to={`${match.url}/projects`} className="nav-link">
+          <NavLink to={`${matchUrl}/projects`} className="nav-link">
             <FontAwesome name="black-tie" />
             <span>Projects</span>
           </NavLink>
@@ -48,29 +49,29 @@ class Story extends Component {
         <div className="content">
           <Route
             exact
-            path={`${match.url}`}
+            path={`${matchUrl}`}
             render={() => <Timeline data={data} />}
           />
           <Route
             exact
-            path={`${match.url}/story`}
+            path={`${matchUrl}/story`}
             render={() => <Timeline data={data} />}
           />
           <Route
             exact
-            path={`${match.url}/work-experience`}
+            path={`${matchUrl}/work-experience`}
             render={() =>
               <Timeline data={data.filter(o => o.type === 'Work')} />}
           />
           <Route
             exact
-            path={`${match.url}/academic-qualification`}
+            path={`${matchUrl}/academic-qualification`}
             render={() =>
               <Timeline data={data.filter(o => o.type === 'Education')} />}
           />
           <Route
             exact
-            path={`${match.url}/projects`}
+            path={`${matchUrl}/projects`}
             render={() =>
               <Timeline data={data.filter(o => o.type === 'Project')} />}
           />
