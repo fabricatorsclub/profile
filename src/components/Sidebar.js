@@ -36,30 +36,34 @@ class WorkExperience extends Component {
           <div className="job">
             <span className="job-title">UI Designer</span>
             <span className="job-duration">2011 - 2017</span>
-            <span className="job-exp">3 Years</span>
+            <span className="job-exp">6 Years</span>
           </div>
         </div>
         <div className="skills">
           <span className="job-title">Tools proficiency</span>
           <div className="skill">
             <span>Adobe Photoshop</span>
-            <ProgressBar percentage="50" />
+            <ProgressBar percentage="80" />
           </div>
           <div className="skill">
-            <span>Adobe Photoshop</span>
-            <ProgressBar percentage="50" />
+            <span>Adobe Illustrator</span>
+            <ProgressBar percentage="60" />
           </div>
           <div className="skill">
-            <span>Adobe Photoshop</span>
-            <ProgressBar percentage="50" />
+            <span>Adobe Indesign</span>
+            <ProgressBar percentage="40" />
           </div>
           <div className="skill">
-            <span>Adobe Photoshop</span>
-            <ProgressBar percentage="50" />
+            <span>HTML & CSS</span>
+            <ProgressBar percentage="70" />
           </div>
           <div className="skill">
-            <span>Adobe Photoshop</span>
-            <ProgressBar percentage="50" />
+            <span>Javascript</span>
+            <ProgressBar percentage="05" />
+          </div>
+          <div className="skill">
+            <span>ReactJs</span>
+            <ProgressBar percentage="30" />
           </div>
         </div>
       </div>
@@ -109,7 +113,7 @@ class Sidebar extends Component {
         <div className="profilePicWrapper" style={this.props.imgStyle}>
           <Route
             exact
-            path={`/profile/work-experience`}
+            path={`//gopiraja.com/profile/work-experience`}
             render={() => <WorkExperience />}
           />
           <img
