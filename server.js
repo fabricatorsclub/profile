@@ -55,11 +55,16 @@ const getProfileData = username => {
 };
 
 const ProfileDataFn = function(req, res) {
-  const { username } = req.params;
+  const { username, customDomain } = req.params;
   getProfileData(username)
     .then(value => {
       const { name } = value;
-      const val = getSite({ userData: value, username, manifest });
+      const val = getSite({
+        userData: value,
+        customDomain,
+        username,
+        manifest,
+      });
       res.send(val);
     })
     .catch(err => {
@@ -122,9 +127,9 @@ app.get('/', function(req, res) {
     const val = getSite({ page: 'home_page', manifest });
     res.send(val);
   } else if (hostsMap[host]) {
-    const userName = hostsMap[host];
+    const username = hostsMap[host];
     const req = {
-      params: { username },
+      params: { username, customDomain: true },
     };
     ProfileDataFn(req, res);
   } else {

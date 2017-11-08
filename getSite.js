@@ -88,7 +88,7 @@ class HomePage extends React.Component {
 
 class Site extends React.Component {
   render() {
-    const { manifest, username, dpUrl, userData } = this.props;
+    const { customDomain, manifest, username, dpUrl, userData } = this.props;
 
     const gaString = `
       window.dataLayer = window.dataLayer || [];
@@ -147,6 +147,10 @@ class Site extends React.Component {
             rel="stylesheet"
             href={`https://cdn.itsmybio.me/${manifest['main.css']}`}
           />
+          {customDomain &&
+            <script>
+              var customDomain = {customDomain};
+            </script>}
           <script src={`https://cdn.itsmybio.me/${manifest['main.js']}`} />
 
           <script
