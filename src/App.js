@@ -17,7 +17,7 @@ class App extends Component {
     textColor: 'rgb(0,0,0)',
   };
   componentWillMount() {
-    const { username } = this.props.match.params;
+    const username = this.props.match.params.username || window.customDomain;
     getProfileData(username)
       .then(data => {
         if (data) {
