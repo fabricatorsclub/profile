@@ -12,7 +12,8 @@ class Story extends Component {
     const data = this.props.data.story;
     console.log(data);
     const matchUrl = match.url === '/' ? '' : match.url;
-    const matchUrlName = match.url === '/' ? '' : match.params.username;
+    const matchUrlName =
+      match.params.username === undefined ? '' : match.params.username;
 
     return (
       <div id="story" className="contentWrapper story">
